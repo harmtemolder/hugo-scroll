@@ -162,7 +162,6 @@ body {
 a.fn-item {
   display: block;
   cursor: pointer;
-  opacity: 0.7;
   text-decoration: none;
 
   &:hover,
@@ -170,8 +169,8 @@ a.fn-item {
     color: var(--sticky-menu-text-color);
   }
 
-  &.active {
-    opacity: 1;
+  &:hover {
+    text-decoration: underline;
   }
 }
 
