@@ -1,80 +1,89 @@
 html {
-  height: 100%;
-  max-height: 100%;
-  font-size: 62.5%;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+    height: 100%;
+    max-height: 100%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
-  height: 100%;
-  max-height: 100%;
-  font-family: "Roboto Slab", serif;
-  font-size: 2rem;
-  line-height: 1.6em;
-  color: var(--section-light-text-color);
+    height: 100%;
+    max-height: 100%;
+    font-family: "Open Sans", serif;
+    font-size: 2rem;
+    line-height: 1.6em;
+    color: var(--section-light-text-color);
 }
 
 ::-moz-selection {
-  color: #222;
-  background: #d6edff;
-  text-shadow: none;
+    color: #222;
+    background: #d6edff;
+    text-shadow: none;
 }
 
 ::selection {
-  color: #222;
-  background: #d6edff;
-  text-shadow: none;
+    color: #222;
+    background: #d6edff;
+    text-shadow: none;
 }
 
 /** =========== Headings =========== */
-h1,h2,h3,h4,h5,h6 {
-  text-rendering: optimizeLegibility;
-  line-height: 1;
-  margin-top: 0;
-  margin-bottom: 10px;
-  font-family: "Open Sans", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Zilla Slab", sans-serif;
+    line-height: 1;
+    margin-bottom: 10px;
+    margin-top: 0;
+    text-rendering: optimizeLegibility;
 }
-h3,h4,h5,h6 {
-  text-rendering: optimizeLegibility;
-  line-height: 120%;
-  margin-top: 0;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 0%;
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+    line-height: 120%;
+    margin-bottom: 0%;
+    margin-top: 0;
+    text-rendering: optimizeLegibility;
 }
 
 h1 {
-  font-size: 5rem;
-  line-height: 1.2em;
-  letter-spacing: -2px;
-  text-indent: -3px;
+    font-size: 5rem;
+    line-height: 1.2em;
+    letter-spacing: -2px;
+    text-indent: -3px;
 }
 
 h2 {
-  font-size: 4rem;
-  line-height: 1.2em;
-  letter-spacing: -1px;
-  text-indent: -2px;
+    font-size: 4rem;
+    line-height: 1.2em;
+    letter-spacing: -1px;
+    text-indent: -2px;
 }
 
 h3 {
-  font-size: 3.5rem;
+    font-size: 3.5rem;
 }
 
 h4 {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 h5 {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 h6 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
-p{
-  margin: 1em 0;
+p {
+    margin: 1em 0;
 }
 
 /** ======== Links ========= */
@@ -99,34 +108,36 @@ dl {
     margin: 1.6em 0;
 
     dt {
-    float: left;
-    width: 180px;
-    overflow: hidden;
-    clear: left;
-    text-align: right;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-weight: bold;
-    margin-bottom: 1em;
+        float: left;
+        width: 180px;
+        overflow: hidden;
+        clear: left;
+        text-align: right;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: bold;
+        margin-bottom: 1em;
     }
 
     dd {
-    margin-left: 200px;
-    margin-bottom: 1em;
+        margin-left: 200px;
+        margin-bottom: 1em;
     }
 }
 
-ul, ol {
+ul,
+ol {
     margin: 1em 0;
 
     // Second level of lists
-    ol, ul {
+    ol,
+    ul {
         margin: 0.4em 0;
     }
 }
 
 li {
-  margin-left: 30px;
+    margin-left: 30px;
 }
 
 /** ======== Content semantics ============= */
@@ -182,11 +193,12 @@ mark {
     filter: brightness(125%);
 }
 
-code, tt {
+code,
+tt {
     color: var(--section-light-text-color);
     background-color: var(--section-uni-code-bg-color);
     border-radius: 3px;
-    font-family: Inconsolata, monospace, sans-serif;
+    font-family: "JetBrains Mono", monospace, sans-serif;
     font-size: 0.75em;
     padding: 3px 5px;
 }
@@ -195,7 +207,7 @@ code {
     color: var(--section-light-text-color);
     background-color: var(--section-uni-code-bg-color);
     border-radius: 3px;
-    font-family: Inconsolata, monospace, sans-serif;
+    font-family: "JetBrains Mono", monospace, sans-serif;
     font-size: 0.75em;
     padding: 3px 5px;
 }
@@ -207,7 +219,7 @@ pre {
     border-radius: 3px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    font-family: Inconsolata, monospace, sans-serif;
+    font-family: "JetBrains Mono", monospace, sans-serif;
     font-size: 0.9em;
     margin: 1.6em 0;
     padding: 10px;
@@ -215,7 +227,8 @@ pre {
     overflow-x: scroll;
     width: 100%;
 
-    code, tt {
+    code,
+    tt {
         color: inherit;
         background: transparent;
         font-size: inherit;
@@ -259,6 +272,7 @@ table {
     }
 
     thead {
+
         th,
         td {
             border-bottom: 1px solid var(--color-text);
@@ -288,4 +302,3 @@ table {
         font-size: 1.1rem;
     }
 }
-

@@ -28,7 +28,7 @@
 {{ $stylesheetFA := resources.Get "css/fontawesome/fontawesome.min.css" }}
 {{ $stylesheetFABrands := resources.Get "css/fontawesome/brands.min.css" }}
 {{ $stylesheetFASolid := resources.Get "css/fontawesome/solid.min.css" }}
-{{ $stylesheetFonts := resources.Get "css/fonts.css" }}
+{{ $stylesheetFonts := ( resources.Get "css/fonts.scss" | css.Sass ) }}
 {{ $stylesheetGeneric := resources.Get "css/generic.css" }}
 
 {{ $stylesheetScreen := ( resources.Get "css/_index.scss" | css.Sass ) }}
